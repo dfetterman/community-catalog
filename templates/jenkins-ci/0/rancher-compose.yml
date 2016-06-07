@@ -24,6 +24,12 @@
         ssh-credentials
         ssh-slaves
         swarm
+    - variable: public_port
+      description: "public port to access jenkins"
+      label: "Public Port"
+      required: true
+      default: "80"
+      type: "int"
 jenkins-primary:
   metadata:
     plugins: |
